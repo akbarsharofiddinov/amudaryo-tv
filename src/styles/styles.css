@@ -15,13 +15,23 @@ li {
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f8fa;
 }
 
 img {
   max-width: 100%;
   display: inline-block;
+}
+
+.main-content {
+  min-height: 40vh;
+  margin: 60px 0;
+  padding: 40px 0;
 }
 
 .container {
@@ -94,17 +104,75 @@ img {
   color: #06c771;
 }
 
+/* Language Switch Box */
+
+.lang-switch_box {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+
+  transition: color 0.3s;
+}
+
+.lang-switch_box:hover {
+  color: #06c771;
+}
+
+.lang-switch_box .lang-switch__drop-down {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  left: 100%;
+  top: -50%;
+
+  border-radius: 6px;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2px 0;
+
+  transform: translate(-100%, 15%);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+}
+
+.lang-switch_box:hover .lang-switch__drop-down {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+
+  transform: translate(0, 15%);
+}
+
+.lang-switch__drop-down li {
+  padding: 5px 8px;
+}
+
+.lang-switch__drop-down li a {
+  color: #333;
+  transition: color 0.4s;
+}
+
+.lang-switch__drop-down li:hover a {
+  color: #06c771;
+}
+
 /* Header Social links */
 .header .social-links {
   display: flex;
-  background-color: #f0f0f0;
-  padding: 10px 15px;
+  gap: 5px;
+
+  background-color: #e4e6eb;
+  padding: 5px 10px;
   border-radius: 20px;
 
   transform: translateY(100%);
 
   position: absolute;
-  top: 20%;
+  top: -5%;
   right: 15%;
 
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -112,6 +180,7 @@ img {
 
 .header .social-links li {
   margin-right: 10px;
+  margin: 0 auto;
 }
 
 .header .social-links li .social-box {
@@ -385,6 +454,7 @@ img {
 
 .section-news {
   margin: 80px 0;
+  background-color: #fff;
 }
 
 .section-news .section-title {
@@ -457,7 +527,6 @@ img {
 .news-item_timeBox .left,
 .news-item_timeBox .month {
   opacity: 0.7;
-  font-weight: 900 !important;
 }
 
 /* 1st News item */
@@ -679,8 +748,6 @@ img {
 .section-report {
   margin: 30px 0;
   padding: 60px 0;
-
-  background-color: rgba(65, 105, 225, 0.048);
 }
 
 .section-report .top {
@@ -741,6 +808,10 @@ img {
 }
 
 /* Footer */
+
+.footer {
+  background-color: #fff;
+}
 
 .footer .top {
   display: flex;
