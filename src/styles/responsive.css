@@ -1,0 +1,124 @@
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 40px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-inner {
+    justify-content: start;
+  }
+
+  .header .social-links {
+    right: 50px;
+    top: 50%;
+  }
+
+  .header-bar {
+    display: block;
+  }
+
+  .header-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 99;
+    padding: 20px 30px;
+
+    background-color: #fff;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-menu.active .close-header_menu__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .section-previews .tv-cards {
+    display: none;
+  }
+
+  .section-previews .swiper-tvProjects {
+    width: 100%;
+  }
+
+  .section-previews .swiper-tvProjects .watch-btn {
+    transform: translate(10%, -50%);
+  }
+
+  .section-news .news-item_box:first-child {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 450px;
+  }
+
+  .section-news .news-item_box:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .section-news .news-item_box:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .section-news .news-item_box:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .section-report {
+    display: none;
+  }
+
+  .social-links {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .section-news .news-item_box:nth-child(3) {
+    grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+  }
+
+  .section-news .news-item_box:nth-child(4) {
+    grid-column-start: 1 !important;
+    grid-column-end: 5 !important;
+  }
+
+  .footer .top {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}

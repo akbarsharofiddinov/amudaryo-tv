@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmudaryoTV Telekanali</title>
-    <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="icon" href="./src/images/logo/logo.png" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/responsive.css" />
     <!-- Swiper -->
     <link
       rel="stylesheet"
@@ -18,8 +19,10 @@
         <div class="header-inner">
           <a href="/" class="logo">
             <img src="./src/images/logo/logo.png" alt="Logo image" />
+            <span></span>
           </a>
           <ul class="header-menu">
+            <button class="close-header_menu__bar">&times;</button>
             <li class="header-menu_item">
               <a href="/" class="header-menu_link"> Bosh sahifa </a>
             </li>
@@ -29,7 +32,9 @@
               </a>
             </li>
             <li class="header-menu_item">
-              <a href="#" class="header-menu_link"> Teleloyihalar </a>
+              <a href="./src/pages/tv-shows.html" class="header-menu_link">
+                Teleloyihalar
+              </a>
             </li>
             <li class="header-menu_item">
               <a href="./src/pages/about.html" class="header-menu_link">
@@ -37,6 +42,7 @@
               </a>
             </li>
           </ul>
+          <button class="header-bar"><i class="fa-solid fa-bars"></i></button>
           <div class="lang-switch_box">
             <p>Tilni tanlang</p>
             <ul class="lang-switch__drop-down">
@@ -486,6 +492,22 @@
         slidesPerView: 3,
         spaceBetween: 120,
         loop: true,
+        breakpoints: {
+          420: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -493,5 +515,6 @@
         },
       });
     </script>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>

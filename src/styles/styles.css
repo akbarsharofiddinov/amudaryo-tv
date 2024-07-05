@@ -56,7 +56,6 @@ img {
   border-radius: 20px;
   margin: 20px 0;
   padding-right: 20px;
-  overflow: hidden;
 }
 
 .header-inner .logo {
@@ -67,7 +66,21 @@ img {
   position: relative;
 }
 
-.header-inner .logo::after {
+.header-menu .close-header_menu__bar {
+  display: none;
+}
+
+.header-inner .logo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -130px;
+
+  overflow: hidden;
+}
+
+.header-inner .logo span::after {
   content: "";
   position: absolute;
   width: 240px;
@@ -230,6 +243,19 @@ img {
 }
 .header .social-links li:nth-child(3) a {
   color: #0088cc !important;
+}
+
+/* Header Bar */
+.header-bar {
+  background-color: transparent;
+  border: none;
+  color: #06c771;
+  font-size: 34px;
+
+  position: absolute;
+  right: 150px;
+
+  display: none;
 }
 
 /* Sections */
