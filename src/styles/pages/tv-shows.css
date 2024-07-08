@@ -1,0 +1,28 @@
+.content-inner iframe {
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.content-inner .hot-news__list {
+  display: grid;
+  gap: 45px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  margin-top: 60px;
+}
+
+.hot-news__list .news-box {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hot-news__list .news-box .body {
+  padding: 20px;
+}
+
+.news-box .body .title {
+  font-size: 16px;
+}
