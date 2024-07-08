@@ -560,6 +560,10 @@ img {
   grid-row-end: 3;
 }
 
+.news-item_box:first-child .news-item_link {
+  z-index: 20;
+}
+
 .news-item_box:first-child .news-item_timeBox {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 5px 20px;

@@ -17,6 +17,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .hot-news__list .news-box .body {
@@ -25,4 +26,12 @@
 
 .news-box .body .title {
   font-size: 16px;
+}
+
+.news-box a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
