@@ -974,6 +974,27 @@ img {
   .section-live iframe {
     height: 600px !important;
   }
+
+  .section-previews .watch-btn {
+    transform: translate(20px, -50%);
+  }
+
+  /* Section Tv Shows */
+
+  .section-tv_projects .swiper-button-next {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  .section-tv_projects .swiper-button-prev {
+    left: 100%;
+    transform: translateX(-220%);
+  }
+
+  .section-tv_projects .show-more {
+    left: 100%;
+    transform: translate(-150%, -3px);
+  }
 }
 
 @media screen and (max-width: 992px) {

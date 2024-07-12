@@ -65,6 +65,7 @@
 }
 
 .tv-show_box .show-btn {
+  text-align: center;
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
