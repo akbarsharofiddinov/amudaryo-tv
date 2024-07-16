@@ -1167,6 +1167,15 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+
+  section {
+    margin: 0 !important;
+  }
+
+  .section-title {
+    margin: 25px 0;
+  }
+  
   /* Container Resize */
   .container {
     max-width: 540px !important;
