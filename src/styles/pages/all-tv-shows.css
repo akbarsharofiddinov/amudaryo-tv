@@ -82,3 +82,15 @@
   background-color: #fff;
   color: #06c771;
 }
+
+
+@media screen and (max-width: 768px) {
+  .tv-show_box {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tv-show_box img {
+    width: 100%;
+  }
+}
