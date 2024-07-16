@@ -101,6 +101,7 @@ img {
   gap: 15px;
 
   margin-left: 150px;
+  margin-right: 25px;
 }
 
 .header-menu a {
@@ -121,6 +122,8 @@ img {
   cursor: pointer;
   border-left: 1px solid #ddd;
   padding: 10px;
+
+  user-select: none !important;
 
   transition: color 0.3s;
 }
