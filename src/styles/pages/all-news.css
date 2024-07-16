@@ -32,6 +32,8 @@
 
 .main-content .news-box img {
   height: 180px;
+  width: 270px;
+  object-fit: cover;
 }
 
 .main-content .news-box .right {

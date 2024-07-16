@@ -104,6 +104,13 @@
 .sidebar .hot_news__list .news-box {
   border-top: 1px solid #ddd;
   padding: 20px 0;
+  color: #333;
+
+  transition: color 0.3s;
+}
+
+.sidebar .hot_news__list .news-box:hover {
+  color: #28b751;
 }
 
 .sidebar .hot_news__list .news-box:nth-child(2) {

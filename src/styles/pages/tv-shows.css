@@ -36,6 +36,12 @@
   right: 0;
 }
 
+.news-box img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1200px) {
   iframe {
     height: 600px !important;
